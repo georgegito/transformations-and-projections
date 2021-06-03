@@ -1,7 +1,7 @@
 function Y = paint_triangle_gouraud( img, vertices_2d, vertex_color )
 
     %% swap rows and cols
-%     vertices_2d = [ vertices_2d( :, 2 ), vertices_2d( :, 1)  ];
+    vertices_2d = [ vertices_2d( :, 2 ), vertices_2d( :, 1)  ];
 
     %% paint vertices
     for v = 1 : 3

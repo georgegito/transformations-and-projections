@@ -1,5 +1,5 @@
-function dp = system_transform( cp, T, c0, theta )
+function dp = system_transform( cp, T )
 
-    rotate( T, theta, c0 );
-    dp = T.T( 1:3, 1:3 ) \ cp;
+    cq = T.T \ [ cp; 1 ];
+    dp = cq( 1:3, : );
 end
